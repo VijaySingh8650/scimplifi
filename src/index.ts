@@ -17,7 +17,7 @@ app.use(session({
 app.use("/api",router);
 app.use("/*", invalidUrl);
 
-// app.use(globalError);
+app.use(globalError);
 
 app.listen(3000, ()=>{
     console.log('listening on port 3000');
